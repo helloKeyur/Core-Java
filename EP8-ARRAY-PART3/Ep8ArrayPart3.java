@@ -137,8 +137,8 @@ class Ep8ArrayPart3{
 
 					d). for interface type array as array elements it's implementation class objects are allowed.
 						Runnable[] r = new Runnable[10];
-						r[0] = new Thread();
-						r[1] = new String("hello");
+						r[0] = new Thread(); // valid
+						r[1] = new String("hello"); // invalid, CE:: incompitable type found: java.lang.String required: java.lang.Runnable.
 		*/
 
 		Number[] n = new Number[10];
